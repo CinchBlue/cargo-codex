@@ -1,20 +1,8 @@
-[package]
-name = "cargo-codex"
-version = "0.1.0"
-authors = ["Austin Tasato <aytasato@gmail.com>"]
-license = "MIT"
-edition = "2021"
-description = "Analyzes Cargo projects for build and project info."
-#homepage = "https://sr.ht/~jplatte/cargo-depgraph/"
-#repository = "https://git.sr.ht/~jplatte/cargo-depgraph"
-readme = "README.md"
-categories = ["development-tools::cargo-plugins", "visualization"]
-exclude = [".gitignore", ".rustfmt.toml", "*.png"]
+[workspace]
+resolver = "2"
+members = [
+    "workspace/*",
+]
 
-[dependencies]
-#anyhow = "1.0.38"
-#cargo_metadata = "0.15.0"
-#clap = "4.0.18"
-#petgraph = { version = "0.6.0", default-features = false, features = ["stable_graph"] }
-
-# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+[workspace.dependencies]
+cargo_metadata = "0.15.4"

@@ -4,3 +4,10 @@
 and some project analysis.
 
 TBD.
+
+## Getting Started
+
+```sh
+cargo install just
+just
+```
