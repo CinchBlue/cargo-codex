@@ -11,7 +11,11 @@ categories = ["development-tools::cargo-plugins", "visualization"]
 exclude = [".gitignore", ".rustfmt.toml", "*.png"]
 
 [dependencies]
+clap = { workspace = true, features = ["derive"] }
+eyre.workspace = true
+cargo-manifest.workspace = true
 cargo_metadata.workspace = true
+tracing = "0.1.37"
 
 #anyhow = "1.0.38"
 #cargo_metadata = "0.15.0"
